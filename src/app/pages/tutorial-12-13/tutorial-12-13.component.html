@@ -1,0 +1,25 @@
+<!-- <h2>Name is
+    <div *ngIf="name; then thenBlock; else elseBlock"></div>
+    <ng-template #thenBlock>
+        <span>
+            {{name}}
+        </span>
+    </ng-template>
+    <ng-template #elseBlock>
+        <span>
+            hidden
+        </span>
+    </ng-template>
+</h2> -->
+
+<input [(ngModel)]="color" type="text"/>
+
+<div [ngSwitch]="color">
+    <div [style]="getStyle(color)" *ngSwitchCase="'red'">You picked red color</div>
+    <div [style]="getStyle(color)" *ngSwitchCase="'blue'">You picked blue color</div>
+    <div [style]="getStyle(color)" *ngSwitchCase="'green'">You picked green color</div>
+    <div [style]="getStyle()" *ngSwitchDefault>Pick Again</div>
+</div>
+
+
+<!-- <div [style]='getStyle(color)'>You picked {{color}} color</div> -->

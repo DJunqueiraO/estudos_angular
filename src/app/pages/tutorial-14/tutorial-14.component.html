@@ -1,0 +1,9 @@
+<div *ngFor="let color of colors; index as i; first as f; last as l">
+    <div [style]="'display: flex; margin-top: 20px; align-items: center'"> 
+        <div [style]="getStyle(color)"></div> 
+        {{i + 1}}: {{color}}
+        <span [style]="firstStyle">
+            {{f? 'first!' : l? 'last!' : ''}}
+        </span>
+    </div>
+</div>
