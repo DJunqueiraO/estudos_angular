@@ -1,85 +1,51 @@
 import { Routes } from '@angular/router';
-import { DetailsComponent, HomeComponent, Test2Component, Test3Component, Test4Component, Test5Component, Test6Component, Test7Component, TestComponent, Tutorial10Component, Tutorial11Component, Tutorial1213Component, Tutorial14Component, Tutorial15Component, Tutorial16Component, Tutorial17Component } from './pages/Pages';
+import { 
+    DetailsComponent, 
+    HomeComponent, 
+    Test2Component, 
+    Test3Component, 
+    Test4Component, 
+    Test5Component, 
+    Test6Component, 
+    Test7Component, 
+    TestComponent, 
+    Tutorial10Component, 
+    Tutorial11Component, 
+    Tutorial1213Component, 
+    Tutorial14Component, 
+    Tutorial15Component, 
+    Tutorial16Component, 
+    Tutorial17Component 
+} from './pages/Pages';
+import { Type } from '@angular/core';
+
+const createRoute = (
+    path: string, 
+    component: Type<any>, 
+    title: string = ''
+) => (
+    {
+        path: path,
+        component: component,
+        title: title || path
+    }
+)
 
 export const routes: Routes = [
-    {
-        path: '',
-        component: HomeComponent,
-        title: 'Home page'
-    },
-    {
-        path: 'details/:id',
-        component: DetailsComponent,
-        title: 'Home details'
-    },
-    {
-        path: 'tutorial3',
-        component: TestComponent,
-        title: '3'
-    },
-    {
-        path: 'tutorial4',
-        component: Test2Component,
-        title: '4'
-    },
-    {
-        path: 'tutorial5',
-        component: Test3Component,
-        title: '5'
-    },
-    {
-        path: 'tutorial6',
-        component: Test4Component,
-        title: '6'
-    },
-    {
-        path: 'tutorial7',
-        component: Test5Component,
-        title: '7'
-    },
-    {
-        path: 'tutorial8',
-        component: Test6Component,
-        title: '8'
-    },
-    {
-        path: 'tutorial9',
-        component: Test7Component,
-        title: '9'
-    },
-    {
-        path: 'tutorial10',
-        component: Tutorial10Component,
-        title: '10'
-    },
-    {
-        path: 'tutorial11',
-        component: Tutorial11Component,
-        title: '11'
-    },
-    {
-        path: 'tutorial1213',
-        component: Tutorial1213Component,
-        title: '1213'
-    },
-    {
-        path: 'tutorial14',
-        component: Tutorial14Component,
-        title: '14'
-    },
-    {
-        path: 'tutorial15',
-        component: Tutorial15Component,
-        title: '15'
-    },
-    {
-        path: 'tutorial16',
-        component: Tutorial16Component,
-        title: '16'
-    },
-    {
-        path: 'tutorial17',
-        component: Tutorial17Component,
-        title: '17'
-    }
+    createRoute('', HomeComponent, 'Home page'),
+    createRoute('details/:id', DetailsComponent, 'Home details'),
+    createRoute('3', TestComponent),
+    createRoute('4', Test2Component),
+    createRoute('5', Test3Component),
+    createRoute('6', Test4Component),
+    createRoute('7', Test5Component),
+    createRoute('8', Test6Component),
+    createRoute('9', Test7Component),
+    createRoute('10', Tutorial10Component),
+    createRoute('11', Tutorial11Component),
+    createRoute('12_13', Tutorial1213Component),
+    createRoute('14', Tutorial14Component),
+    createRoute('15', Tutorial15Component),
+    createRoute('16', Tutorial16Component),
+    createRoute('17', Tutorial17Component)
 ];
