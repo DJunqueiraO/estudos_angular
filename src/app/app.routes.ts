@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { Type } from '@angular/core';
 import { 
     DetailsComponent, 
     HomeComponent, 
@@ -15,9 +16,9 @@ import {
     Tutorial14Component, 
     Tutorial15Component, 
     Tutorial16Component, 
-    Tutorial17Component 
+    Tutorial17Component, 
+    Tutorial1819Component
 } from './pages/Pages';
-import { Type } from '@angular/core';
 
 const createRoute = (
     path: string, 
@@ -47,5 +48,6 @@ export const routes: Routes = [
     createRoute('14', Tutorial14Component),
     createRoute('15', Tutorial15Component),
     createRoute('16', Tutorial16Component),
-    createRoute('17', Tutorial17Component)
+    createRoute('17', Tutorial17Component),
+    createRoute('18_19', Tutorial1819Component)
 ];
