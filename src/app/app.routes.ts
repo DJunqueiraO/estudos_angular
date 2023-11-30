@@ -1,19 +1,5 @@
 import { Routes } from '@angular/router';
-import { DetailsComponent, HomeComponent } from './app.pages';
-import { Tutorial17Component } from './pages/tutorial-17/tutorial-17.component';
-import { Tutorial16Component } from './pages/tutorial-16/tutorial-16.component';
-import { Tutorial15Component } from './pages/tutorial-15/tutorial-15.component';
-import { Tutorial14Component } from './pages/tutorial-14/tutorial-14.component';
-import { Tutorial1213Component } from './pages/tutorial-12-13/tutorial-12-13.component';
-import { Tutorial11Component } from './pages/tutorial-11/tutorial-11.component';
-import { Tutorial10Component } from './pages/tutorial-10/tutorial-10.component';
-import { Test6Component } from './pages/tutorial-8/test-6.component';
-import { Test5Component } from './pages/tutorial-7/test-5.component';
-import { Test4Component } from './pages/tutorial-6/test-4.component';
-import { Test3Component } from './pages/tutorial-5/test-3.component';
-import { Test2Component } from './pages/tutorial-4/test-2.component';
-import { TestComponent } from './pages/test/test.component';
-import { Test7Component } from './pages/tutorial-9/test-7.component';
+import { DetailsComponent, HomeComponent, Test2Component, Test3Component, Test4Component, Test5Component, Test6Component, Test7Component, TestComponent, Tutorial10Component, Tutorial11Component, Tutorial1213Component, Tutorial14Component, Tutorial15Component, Tutorial16Component, Tutorial17Component } from './pages/Pages';
 
 export const routes: Routes = [
     {
