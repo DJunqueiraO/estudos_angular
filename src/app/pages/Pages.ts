@@ -1,4 +1,4 @@
-export { Tutorial1819Component } from "./tutorial-18-19/tutorial-18-19.component";
+export { EmployeePageComponent } from "./employee-page/employee-page.component";
 
 export { DetailsComponent } from "./details/details.component";
 

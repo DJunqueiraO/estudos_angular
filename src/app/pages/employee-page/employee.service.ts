@@ -13,7 +13,7 @@ export class EmployeeService {
     return [
       {
         id: 1,
-        name: 'Josicleison',
+        name: 'Maria',	
         age: 24
       },
       {
@@ -25,6 +25,11 @@ export class EmployeeService {
         id: 3,
         name: 'Joaquim',
         age: 25
+      },
+      {
+        id: 4,
+        name: 'Andre',
+        age: 30
       }
     ]
   }

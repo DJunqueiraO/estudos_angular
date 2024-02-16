@@ -2,7 +2,7 @@ import { ApplicationConfig } from '@angular/core';
 import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
-import { EmployeeService } from './employee.service';
+import { EmployeeService } from './pages/employee-page/employee.service';
 
 export const appConfig: ApplicationConfig = {
   providers: [

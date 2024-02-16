@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { EmployeeService } from '../../employee.service';
+import { EmployeeService } from './employee.service';
 import { Employee } from '../../models/Employee';
 import { EmployeeDetailComponent, EmployeeListComponent } from '../../components/Components';
 
-const componentName = 'tutorial-18-19';
+const componentName = 'employee-page';
 
 @Component(
   {
@@ -16,7 +16,7 @@ const componentName = 'tutorial-18-19';
   }
 )
 
-export class Tutorial1819Component {
+export class EmployeePageComponent {
 
   public employees: Employee[] = [];
 
