@@ -1,4 +1,4 @@
-export { EmployeePageComponent } from "./employee-page/employee-page.component";
+export { EmployeePageComponent } from "./tutorial-18-19-20-21/employee-page.component";
 
 export { DetailsComponent } from "./details/details.component";
 
