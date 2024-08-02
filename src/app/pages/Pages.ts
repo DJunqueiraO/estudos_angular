@@ -1,8 +1,8 @@
-export { EmployeePageComponent } from "./tutorial-18-19-20-21/employee-page.component";
-
 export { DetailsComponent } from "./details/details.component";
 
 export { HomeComponent } from "./home/home.component";
+
+export { Tutorial18Component } from './tutorial-18/tutorial-18.component';
 
 export { Tutorial17Component } from './tutorial-17/tutorial-17.component';
 

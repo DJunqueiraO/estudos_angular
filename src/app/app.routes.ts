@@ -2,7 +2,6 @@ import { Routes } from '@angular/router';
 import { Type } from '@angular/core';
 import { 
     DetailsComponent, 
-    EmployeePageComponent, 
     HomeComponent, 
     Test2Component, 
     Test3Component, 
@@ -17,6 +16,7 @@ import {
     Tutorial14Component, 
     Tutorial15Component, 
     Tutorial16Component, 
+    Tutorial18Component, 
     Tutorial17Component
 } from './pages/Pages';
 
@@ -49,5 +49,5 @@ export const routes: Routes = [
     createRoute('15', Tutorial15Component),
     createRoute('16', Tutorial16Component),
     createRoute('17', Tutorial17Component),
-    createRoute('18_19', EmployeePageComponent)
+    createRoute('18', Tutorial18Component)
 ];
