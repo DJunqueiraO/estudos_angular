@@ -1,0 +1,8 @@
+.root {
+  background-color: transparent;
+}
+
+.app-body {
+  min-height: 80vh;
+  overflow: hidden;
+}

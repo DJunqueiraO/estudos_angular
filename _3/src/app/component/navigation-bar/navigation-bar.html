@@ -1,0 +1,13 @@
+<nav>
+  <h1 class="title">
+    {{ title() }}
+  </h1>
+  
+  <ul>
+    <li *ngFor="let route of routes">
+      <a [href]="route.path">{{route.path | titlecase}}</a>
+    </li>
+  </ul>
+
+
+</nav>

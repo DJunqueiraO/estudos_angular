@@ -1,0 +1,22 @@
+footer {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--foursys-blue);
+  color: var(--reverse-text);
+}
+
+.footer-copyright, .footer-logo-section {
+  margin-block: 1rem;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-social-icon {
+  filter: brightness(0) saturate(100%) invert(100%);
+}
